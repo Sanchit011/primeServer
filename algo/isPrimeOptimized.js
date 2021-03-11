@@ -11,8 +11,8 @@ module.exports = (number) => {
         if(number % 2 == 0){isPrime = false;}
         else if(number % 3 == 0){isPrime = false;}
         else{
-            for (let i = 6; i*i <= number; i = i+6) {
-                if (number % (i-1) == 0 || number % (i+1) == 0) {
+            for (let i = 5; i*i <= number; i = i+6) {
+                if (number % (i) == 0 || number % (i+2) == 0) {
                     isPrime = false;
                     break;
                 }
